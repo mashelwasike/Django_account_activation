@@ -1,0 +1,10 @@
+{% autoescape off %}
+    Welcome to saviour developers
+
+    Hello {{ name }}
+
+    Please activate your account by clicking on the following link
+
+    confirmationLink: http://{{domain}}{% url 'activate' uid64=uid token=token %}
+
+{% endautoescape %}
